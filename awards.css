@@ -1,0 +1,137 @@
+@font-face {
+    src: url(fonts/BebasNeue-Regular.ttf);
+    font-family: BebasNeue;
+}
+
+@font-face {
+    src: url(fonts/BungeeInline-Regular.ttf);
+    font-family: BungeeInline;
+}
+
+.body {
+    max-width: 100%;
+    overflow: hidden;
+}
+.fulshear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #5d2d83;
+    height: 170px;
+    text-align: center;
+    padding-left: 30px;
+
+    
+   
+}
+.FULSHEAR {
+    font-size:90px;
+    font-family: BebasNeue;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+.tsa {
+    font-size:90px;
+    font-family: BebasNeue;
+    color: white;
+    letter-spacing: 10px;
+
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color:rgb(84, 27, 138);
+    height: 35px;
+
+}
+.nav a {
+    color: white;
+    padding-bottom: 1px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav a:hover {
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 0;
+    padding: 50px;
+    
+}
+
+.grid-container p {
+    font-family: BebasNeue;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 45px;
+}
+.grid-container h2 {
+    font-family: BungeeInline;
+    font-size: 30px;
+    text-align: center;
+
+    padding-bottom: 40px;
+    color: #5d2d83;
+}
+
+.grid-item {
+    padding: 50px;
+
+}
+.grid-item img {
+    width: auto;
+    height: 500px;
+    
+    max-width: 700px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+
+.as {
+    font-family: BungeeInline;
+    text-align: center;
+    color: #5d2d83;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px gray;
+
+}
+.contacts img {
+    width: 100px;
+
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #000000;
+    gap: 60px;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: white;
+   background-image: url("images-home/pattern.png");
+   text-shadow: 2px 2px 5px black;
+}
+
+.contacts h2 {
+    font-family: BungeeInline;
+}
+
+

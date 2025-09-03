@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="resource.css">
+    <style>
+        #protected-content { display: none; }
+    </style>
+</head>
+<body style="margin: 0">
+    <header>
+        <div class="fulshear">
+            <h1 class="FULSHEAR">FULSHEAR TSA</h1>
+            <img src="images-home/ftrans.png" width="150px">
+            <h1 class="tsa"></h1>
+        </div>
+        <div class="nav">
+            <a href="home.html">HOME</a>
+            <a href="whyjoin.html">WHY JOIN?</a>
+            <a href="awards.html">AWARDS</a>
+            <a href="officers.html">OFFICERS</a>  
+            <a href="resource.html">RESOURCES</a>
+        </div>
+    </header>
+
+    <main id="protected-content" class="content">
+        <h1>Resources</h1>
+        <p>Here are some useful resources for Fulshear TSA members:</p>
+        <ul class="links">
+            <li><a href="https://www.tsaweb.org/">TSA National Website</a></li>
+            <li><a href="https://www.txtsa.org/">Texas TSA Website</a></li>
+            <li><a href="https://www.fulsherts.org/">Fulshear High School Website</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1cLY18Fc27rvsdVNduvnbt2ryE2r4Tl3w">Project Archive</a></li>
+        </ul>
+    </main>
+    <script>
+        window.onload = function() {
+            const password = prompt("Enter the password:");
+            if (password === "fulsheartsa26") {
+                document.getElementById("protected-content").style.display = "block";
+            } else {
+                document.body.innerHTML = "<h2>Access Denied</h2>";
+            }
+        }
+    </script>
+</body>
+</html>

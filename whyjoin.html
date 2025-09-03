@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officers</title>
+    <link rel="stylesheet" href="whyjoin.css">
+    <link rel="stylesheet" href="whyjoin.js">
+</head>
+
+<body style="margin: 0">
+    <header>
+        <div class="fulshear">
+            <h1 class="FULSHEAR">FULSHEAR TSA</h1>
+            <img src="images-home/ftrans.png" width="150px">
+            <h1 class="tsa"></h1>
+        </div>
+        <div class="nav">
+            <a href="home.html">HOME</a>
+            <a href="whyjoin.html">WHY JOIN?</a>
+            <a href="awards.html">AWARDS</a>
+            <a href="officers.html">OFFICERS</a>  
+            <a href="resource.html">RESOURCES</a>
+        </div>
+    </header>
+    <main>
+        <div class="whyjoin">
+            <h1>Why You Should Join</h1>
+        
+            <p>
+                The Technology Student Association (TSA) is a 
+                national organization that empowers students to explore 
+                STEM (science, technology, engineering, and math) through hands-on competitions, 
+                leadership opportunities, and real-world problem solving. By joining TSA, students develop critical thinking, 
+                collaboration, and technical skills that prepare them for future careers. It also offers a chance to connect with 
+                like-minded peers and showcase innovations at regional, state, 
+                and national conferences. TSA is a fun and inspiring way to turn your passion for technology into real achievement.
+            </p>
+        </div>
+        
+        <!-- Add this inside <main>, above or below your <h1 class="whyjoin"> -->
+       <div class="carousel">
+    <div class="carousel-info">
+        <h2 id="carousel-header">Competitions</h2>
+        <p id="carousel-text">
+            One of the most exciting reasons to join the Technology Student Association (TSA) is the wide 
+            variety of competitions that let you explore and showcase your skills in STEM and leadership. 
+            Whether you're passionate about coding, engineering, fashion design, architecture, 
+            video production, or even public speaking, TSA has over 70 competitive events tailored to 
+            different interests and abilities. These events challenge you to solve real-world problems, 
+            often in teams, and give you the chance to compete at the regional, state, and even national level. 
+            Not only do TSA competitions build your resume and college applications, but they also help you grow as a problem-solver, 
+            collaborator, and leader—all while having fun and making friends with students across the country.
+        </p>
+    </div>
+    <button id="prev">&#8592;</button>
+    <img id="carousel-img" src="images-whyjoin/competitions.jpg" alt="Image 1" width="900" height="800">
+    <button id="next">&#8594;</button>
+</div>
+        <script>
+       const images = [
+    { src: "images-whyjoin/competitions.jpg", header: "Competitions", text: "One of the most exciting reasons to join the Technology Student Association (TSA) is the wide variety of competitions that let you explore and showcase your skills in STEM and leadership. Whether you're passionate about coding, engineering, fashion design, architecture, video production, or even public speaking, TSA has over 70 competitive events tailored to different interests and abilities. These events challenge you to solve real-world problems, often in teams, and give you the chance to compete at the regional, state, and even national level. Not only do TSA competitions build your resume and college applications, but they also help you grow as a problem-solver, collaborator, and leader—all while having fun and making friends with students across the country." },
+    { src: "images-whyjoin/granthuzz.jpg", header: "Leadership", text: "TSA isn't just about competitions—it's a powerful platform for building leadership skills that last a lifetime. From the moment you join, you'll have opportunities to take on roles at the chapter, state, or even national level, where you can help plan events, lead meetings, and represent your peers. TSA encourages every member to grow as a confident speaker, a team organizer, and a problem-solver. Leadership workshops and conferences help you network with professionals and students from all over the country, giving you the tools and confidence to lead in any career you choose. Being part of TSA means stepping up, making a difference, and preparing to lead in the future of technology." },
+    { src: "images-whyjoin/problemsolving.jpg", header: "Problem Solving", text: "TSA gives you the chance to tackle real-world problems in ways that matter. Through hands-on competitions and team projects, you’ll learn how to think critically, manage time, and develop creative solutions—skills used every day in careers like engineering, business, and technology. Whether you're designing a sustainable city, building a working robot, or creating a cybersecurity plan, TSA challenges you to think beyond the classroom and apply what you’ve learned to real-life scenarios. These experiences don’t just prepare you for college and careers—they train you to solve problems that impact the world around you." }
+];
+let current = 0;
+
+function updateCarousel() {
+    document.getElementById('carousel-img').src = images[current].src;
+    document.getElementById('carousel-img').alt = `Image ${current + 1}`;
+    document.getElementById('carousel-header').textContent = images[current].header;
+    document.getElementById('carousel-text').textContent = images[current].text;
+}
+        document.getElementById('prev').onclick = function() {
+            current = (current - 1 + images.length) % images.length;
+            updateCarousel();
+        };
+        document.getElementById('next').onclick = function() {
+            current = (current + 1) % images.length;
+            updateCarousel();
+        };
+        </script>
+        <!-- ...existing code... -->
+    </main>
+    <footer>
+        <div class="contacts">
+
+            
+            <h2>Contact Us</h2>
+            <p>Email: tsacfhs@gmail.com</p>
+            <p>Social Media:</p>
+            <a href="https://www.instagram.com/fulshear.tsa/"><img src="images-home/insta.png" ></a>
+            <a href="https://www.facebook.com/people/Fulshear-TSA/100094673970452/#"><img src="images-home/facebook.png"></a>
+        </div>
+        
+    </footer>    
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+@font-face {
+    src: url(fonts/BebasNeue-Regular.ttf);
+    font-family: BebasNeue;
+}
+@font-face {
+    src: url(fonts/BungeeInline-Regular.ttf);
+    font-family: BungeeInline;
+}
+
+.fulshear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #5d2d83;
+    height: 170px;
+    text-align: center;
+    padding-left: 30px;
+    
+    
+   
+}
+.FULSHEAR {
+    font-size:90px;
+    font-family: BebasNeue;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+.tsa {
+    font-size:90px;
+    font-family: BebasNeue;
+    color: white;
+    letter-spacing: 10px;
+
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color:rgb(84, 27, 138);
+    height: 35px;
+    
+}
+.nav a {
+    color: white;
+    padding-bottom: 1px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav a:hover {
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.whyjoin h1 {
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: BungeeInline;
+    letter-spacing: 10px;
+    border: none;
+    color:#5d2d83;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+}
+
+.whyjoin p {
+    font-size: 20px;
+    font-family: BebasNeue;
+    font-weight: bold;
+    padding: 30px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+    background-color: #5d2d83;
+    color: white;
+}
+.funthings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 2rem; /* spacing between grid items */
+  align-items: start; /* aligns images and text to top */
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item h2 {
+    font-family: BungeeInline;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 100px;
+}
+.carousel-info {
+    min-width: 250px;
+    max-width: 350px;
+    
+    margin-left: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#carousel-header {
+    font-family: BungeeInline;
+    color: #5d2d83;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+#carousel-img {
+    width: 800px;      /* Set your desired width */
+    height: 700px;     /* Set your desired height */
+    object-fit: cover; /* Crops the image to fill the box */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+}
+#carousel-text {
+    font-size: 1.1em;
+    font-family: Roboto;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.carousel button {
+    background-color: rgb(84, 27, 138);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 1.5em;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.carousel button:hover {
+    background-color: rgb(58, 17, 97);
+    transform: scale(1.1);
+}
+
+.contacts img {
+    width: 100px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #000000;
+    gap: 60px;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: white;
+   background-image: url("images-home/pattern.png");
+   text-shadow: 2px 2px 5px black;
+}
+
+.contacts h2 {
+    font-family: BungeeInline;
+}

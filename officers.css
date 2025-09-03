@@ -1,0 +1,132 @@
+@font-face {
+    src: url(fonts/BebasNeue-Regular.ttf);
+    font-family: BebasNeue;
+}
+
+@font-face {
+    src: url(fonts/BungeeInline-Regular.ttf);
+    font-family: BungeeInline;
+}
+.fulshear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #5d2d83;
+    height: 170px;
+    text-align: center;
+    padding-left: 30px;
+    
+    
+   
+}
+.FULSHEAR {
+    font-size:90px;
+    font-family: BebasNeue;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+.tsa {
+    font-size:90px;
+    font-family: BebasNeue;
+    color: white;
+    letter-spacing: 10px;
+
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color:rgb(84, 27, 138);
+    height: 35px;
+    
+}
+.nav a {
+    color: white;
+    padding-bottom: 1px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav a:hover {
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px;
+    gap: 50px;
+}
+.grid-item {
+    border: 5px dashed rgb(84, 27, 138);
+    border-radius: 30px;
+    display: grid;
+    width: 367px;
+    margin-left: 40px;
+    box-shadow: 2px 5px 7px 0px rgb(189, 189, 189);
+}
+
+.grid-item img {
+    width: 367px;
+    height: 500px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    
+}
+
+.grid-item p {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    padding: 20px;
+
+}
+
+.grid-item h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: BungeeInline;
+    color: rgb(84, 27, 138);
+    padding: 1.5px;
+    margin-bottom: 0;
+}
+
+.grid-item h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: BungeeInline;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgb(84, 27, 138);
+}
+
+.contacts img {
+    width: 100px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #000000;
+    gap: 60px;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: white;
+   background-image: url("images-home/pattern.png");
+   text-shadow: 2px 2px 5px black;
+}
+
+.contacts h2 {
+    font-family: BungeeInline;
+}
