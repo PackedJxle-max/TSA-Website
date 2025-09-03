@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.js">
+
+</head>
+<body style="margin: 0">
+    <header>
+        <div class="fulshear">
+            <h1 class="FULSHEAR">FULSHEAR TSA</h1>
+            <img src="images-home/ftrans.png" width="150px">
+            <h1 class="tsa"></h1>
+        </div>
+        <div class="nav">
+            <a href="home.html">HOME</a>
+            <a href="whyjoin.html">WHY JOIN?</a>
+            <a href="awards.html">AWARDS</a>
+            <a href="officers.html">OFFICERS</a>  
+            <a href="resource.html">RESOURCES</a>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <div class="hero-container">
+            <img src="images-home/tsatrans.png">
+            <div class="hero-text">
+                <h1>Welcome to Fulshear High School TSA Club</h1>
+                <p>Learning to lead in a technical world</p>
+            </div>
+        </div>
+        <div class="gbout">
+            <div class="about">
+                <h2>ABOUT</h2>
+                <ul>
+                    <li>Our chapter has been active for 10 years.</li>
+                    <li>We have a 100+ members.</li>
+                    <li>Holiday Parties</li>
+                    <li>Fun and engaging meetings</li>
+                    <li>Guest Speakers</li>
+                </ul>
+            </div>
+            <div class = "goals">
+                <h2>GOALS</h2>
+                <p>The goal of Fulshear High School’s TSA club is to inspire and prepare students for careers in science, technology, engineering, and math (STEM) by providing hands-on learning experiences and opportunities to compete in challenging events. The club aims to foster leadership, teamwork, and innovation while helping members develop essential technical and problem-solving skills for the future. </p>
+            </div>
+        </div>
+            
+        
+        
+       
+        <div class="tsawhat">
+            <h2>WHAT IS TSA?</h2>
+            <p>The Technology Student Association is a national non-profit career and technical student organization of over 300,000 middle and high school student members engaged in science, technology, engineering, and mathematics.</p>
+        </div>
+<div class="whatdo">
+    <h2>WHAT WE DO</h2>
+    <img id="whatwedo-img" src="images-home/tstadium.jpg" alt="Event Image" style="width:100%; height: 500px;">
+    <p>We compete in various events, including engineering, robotics, and computer science. We also participate in community service projects and leadership development activities.</p>
+</div>
+        <script>
+const images = [
+    "images-home/tstadium.jpg",
+    "images-home/officerwin.jpg",
+    "images-home/manthan.jpg"
+];
+let idx = 0;
+setInterval(() => {
+    idx = (idx + 1) % images.length;
+    document.getElementById("whatwedo-img").src = images[idx];
+}, 3000); // Change every 3 seconds
+</script>
+</body>
+
+    </main>
+
+    <footer>
+        <div class="contacts">
+
+            
+            <h2>Contact Us</h2>
+            <p>Email: tsacfhs@gmail.com</p>
+            <p>Social Media:</p>
+            <a href="https://www.instagram.com/fulshear.tsa/"><img src="images-home/insta.png" ></a>
+            <a href="https://www.facebook.com/people/Fulshear-TSA/100094673970452/#"><img src="images-home/facebook.png"></a>
+        </div>
+        
+    </footer>
+</body>
+</html>
