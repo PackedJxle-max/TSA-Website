@@ -102,6 +102,23 @@
     display: block;
 }
 
+/* Ensure the title and paragraph appear above the image regardless of HTML order */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.grid-item h2,
+.grid-item p {
+    order: 1; /* text first */
+    width: 100%;
+}
+.grid-item img {
+    order: 2; /* image after text */
+    margin-top: 20px;
+}
+
 
 .as {
     font-family: BungeeInline;
@@ -132,6 +149,227 @@
 
 .contacts h2 {
     font-family: BungeeInline;
+}
+
+@media (max-width: 1024px) {
+    .FULSHEAR, .tsa {
+        font-size: 60px;
+    }
+    .nav {
+        gap: 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fulshear {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+    .FULSHEAR, .tsa {
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 16px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .FULSHEAR, .tsa {
+        font-size: 28px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 16px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .FULSHEAR, .tsa {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 16px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+/* Responsive: tablets and smaller */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+    .grid-container p {
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .grid-item img {
+        height: 420px;
+        max-width: 100%;
+    }
+    .as {
+        font-size: 40px;
+    }
+    .contacts {
+        gap: 40px;
+        font-size: 32px;
+        padding: 40px 0;
+    }
+    .contacts img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* stack into single column */
+        padding: 30px 16px;
+        gap: 20px;
+    }
+    .grid-item {
+        padding: 20px 0;
+    }
+    .grid-container p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+    }
+    .as {
+        font-size: 36px;
+    }
+    .contacts {
+        flex-direction: column;
+        font-size: 20px;
+        gap: 20px;
+        text-align: center;
+        padding: 20px 0;
+        background-size: cover;
+        word-break: break-word;
+    }
+    .contacts img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        padding: 20px 12px;
+    }
+    .grid-container p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+    .as {
+        font-size: 32px;
+    }
+    .grid-container {
+        padding: 20px 12px;
+    }
+    .grid-container p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+    .as {
+        font-size: 32px;
+    }
+    .contacts {
+        flex-direction: column;
+        font-size: 16px;
+        gap: 16px;
+        padding: 16px 0;
+        text-align: center;
+        background-size: cover;
+        word-break: break-word;
+    }
+    .contacts img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .as {
+        font-size: 28px;
+    }
+    .grid-container p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .as {
+        font-size: 28px;
+    }
+    .contacts {
+        flex-direction: column;
+        font-size: 18px;
+        gap: 16px;
+        padding: 12px 0;
+        text-align: center;
+        background-size: cover;
+        word-break: break-word;
+    }
+    .contacts img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 375px) {
+    .grid-container p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .as {
+        font-size: 24px;
+    }
+    .grid-container p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .as {
+        font-size: 24px;
+    }
+    .contacts {
+        flex-direction: column;
+        font-size: 12px;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+        background-size: cover;
+        word-break: break-word;
+    }
+    .contacts img {
+        width: 36px;
+    }
 }
 
 
